@@ -1,0 +1,13 @@
+@import '../../utilities/mixins.scss';
+@import '../../utilities/variables.scss';
+@import '../../utilities/extends.scss';
+
+.carousel-inner {
+    @extend %box-shadow;
+    border: 5px solid white;
+    border-radius: 50% !important;
+    z-index: 80;
+    @include mq('medium') {
+        max-width: 600px;
+    }
+}

@@ -1,0 +1,45 @@
+@import '../../utilities/mixins.scss';
+@import '../../utilities/variables.scss';
+@import '../../utilities/extends.scss';
+
+.navbar.default {
+        @include lin-gradient-cloud(60deg);
+        width: 100%;
+        z-index: 1000;
+        position: fixed;
+        text-align: center;
+        @include mq('medium') {
+            @include lin-gradient-cloud(10deg);
+        }
+        .navbar {   
+            &-logo {
+                width: 250px;
+            } 
+            &-item {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            &-link {
+                font-weight: bold;
+                letter-spacing: 1x;
+                font-size: 18px;
+                outline: none;
+            }
+            &-toggler {
+                outline: none;
+            }
+        }
+    }
+    
+    #link {
+     &:active {
+         color: white;
+     }
+     &:hover {
+        color: black;
+     }
+     &:focus {
+         color:black;
+     }   
+    }
+

@@ -1,0 +1,49 @@
+@import '../../utilities/mixins.scss';
+@import '../../utilities/variables.scss';
+@import '../../utilities/extends.scss';
+@import '../../utilities/keyframes.scss';
+
+.landing-page {
+    margin-bottom: 300px;
+    animation: fadeOut 1s;
+    @include skewed {
+        background: $white-smoke;
+        bottom: -20px;
+        @include mq('medium') {
+            bottom: -30px;
+        }
+    }
+
+    &-inner {
+        padding-top: 180px;
+        &-item {
+            &-btn {
+                @include aposCenter($top: 50%, $left: 50%);
+                text-decoration: none;
+            }
+            &-carousel {
+                @include aposCenter($top: 100%, $left: 50%);
+                @include dim(80%);
+                z-index: 100;
+                @include mq('medium') {
+                    @include flexbox($just: center);
+                }
+            }
+        }
+    }
+
+    h1 {
+        color: $white;
+        text-align: center;
+        font-size: 40px;
+        letter-spacing: 1px;
+        @include mq('medium') {
+            font-size: 60px;
+        }
+    }
+
+    p {
+        color: $color-accent;
+        font-size: 20px;
+    }
+}

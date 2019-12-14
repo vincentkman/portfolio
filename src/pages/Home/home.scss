@@ -1,0 +1,25 @@
+@import '../../utilities/mixins.scss';
+@import '../../utilities/variables.scss';
+@import '../../utilities/extends.scss';
+
+.home {
+    @include background($url: '../images/background-fuji.jpg');
+    @include dim(100%, 100%);
+    @include apos($top: 0);
+    z-index: 1000;
+    &-title {
+        color: $white-smoke;
+        text-align: center;
+        @include aposCenter($top: 50%, $left: 45%);
+    }
+    &-link {
+        text-decoration: none;
+        @include aposCenter($top: 70%, $left: 45%);
+        &-btn {
+            @extend %btn-style;
+            grid-area: centered-box;
+            align-self: center;
+            justify-self: center;
+        }
+    }
+}

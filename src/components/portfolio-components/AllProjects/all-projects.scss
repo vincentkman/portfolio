@@ -1,0 +1,9 @@
+@import '../../../utilities/mixins'; 
+@import '../../../utilities/variables';
+@import '../../../utilities/extends';
+
+.all-projects {
+    @extend %center;
+    padding: 50px;
+    @include grid($gap: 50px, $temp-col: repeat(auto-fit, minmax(400px, 1fr)));
+}

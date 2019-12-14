@@ -1,0 +1,41 @@
+@import '../../utilities/mixins.scss';
+@import '../../utilities/variables.scss';
+@import '../../utilities/extends.scss';
+
+.portfolio-info {
+    &-landing-page {
+        @include background($url: '../images/background-fuji.jpg');
+    }
+    &-btn {
+        @extend %center;
+        &-second {
+            margin: 0 10px;
+        }
+    }
+    &-detail {
+        padding: 50px;
+        @include mq('medium') {
+            // @include grid($temp-col: repeat(2, 1fr));
+            @include grid($temp-col: 1fr);
+        }
+        &-img {
+            @extend %center;
+            width: 400px;
+            @include mq('medium') {
+                width: 500px;
+            }
+        }
+        &-box {
+            margin-top: 60px;
+            @include mq('medium') {
+                margin-top: 0;
+            }
+            &-title {
+                text-align: center;
+            }
+            &-icon {
+                @extend %center;
+            }
+        }   
+    }
+}
