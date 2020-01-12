@@ -3,6 +3,8 @@ import project2 from '../images/portfolio-images/kodflix.png';
 import project3 from '../images/portfolio-images/dc-comics.png';
 import project4 from '../images/portfolio-images/e-hostel.png';
 import project5 from '../images/portfolio-images/e-game.png';
+import project6 from '../images/portfolio-images/react-native-dice-game.png';
+import project7 from '../images/portfolio-images/react-native-currency-converter.png';
 
 export const items = [
     {
@@ -70,4 +72,28 @@ export const items = [
         skill4: "fab fa-react skill skill4",
         skill5: "fab fa-js-square skill skill5"
     },
+    {
+        id: "react-native-dice-game",
+        img: project6,
+        title: 'React Native - Dice Game',
+        //description: "I built a responsive, mobile first registration web form using a range of HTML elements such as the input element of checkbox and submit button, the select element of a drop-down list and the text-area element of a multi-line input field. This project is useful as it is common for webpages to have a form either to fill in your personal information or to write a message/review. I enjoy this project as I was able to use flexbox for the very first time and it is indeed a powerful tool when trying to display your items in a certain way. For example, under ‘Contact Information' I used flexbox to show the label and input text box together as a column when viewing in Mobile screen mode and row in Tablet and Desktop screen mode.  Overall, it was an excellent experience and I managed to learn a lot about CSS such as attribute selectors and Pseudo-classes.",
+        github_link: "https://github.com/vincentkman/react-native-dice-game",
+        live_link: "https://time-to-roll.netlify.com/",
+        skill1: "fab fa-html5 skill skill1",
+        skill2: "fab fa-css3-alt skill skill2",
+        skill4: "fab fa-react skill skill4",
+        skill5: "fab fa-js-square skill skill5"
+    },
+    {
+        id: "react-native-currency-converter",
+        img: project7,
+        title: 'React Native - Currency Converter',
+        //description: "I built a responsive, mobile first registration web form using a range of HTML elements such as the input element of checkbox and submit button, the select element of a drop-down list and the text-area element of a multi-line input field. This project is useful as it is common for webpages to have a form either to fill in your personal information or to write a message/review. I enjoy this project as I was able to use flexbox for the very first time and it is indeed a powerful tool when trying to display your items in a certain way. For example, under ‘Contact Information' I used flexbox to show the label and input text box together as a column when viewing in Mobile screen mode and row in Tablet and Desktop screen mode.  Overall, it was an excellent experience and I managed to learn a lot about CSS such as attribute selectors and Pseudo-classes.",
+        github_link: "https://github.com/vincentkman/react-native-currency-converter",
+        live_link: "https://master-currency.netlify.com/",
+        skill1: "fab fa-html5 skill skill1",
+        skill2: "fab fa-css3-alt skill skill2",
+        skill4: "fab fa-react skill skill4",
+        skill5: "fab fa-js-square skill skill5"
+    }
 ]

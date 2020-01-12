@@ -4,8 +4,8 @@
 @import '../../utilities/keyframes.scss';
 
 .landing-page {
-    margin-bottom: 300px;
     animation: fadeOut 1s;
+    margin-bottom: 300px;
     @include skewed {
         background: $white-smoke;
         bottom: -20px;
