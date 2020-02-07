@@ -15,8 +15,8 @@ import {
 import Logo from '../../images/logo.png';
 
 class Header extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.toggle = this.toggle.bind(this);
         this.state = {
             isOpen: false
@@ -33,7 +33,7 @@ class Header extends React.Component {
             <nav>
                 <Navbar className='navbar default' color="transparent" light expand="md">
                     <NavbarBrand href="/"><img src={Logo} alt='logo' className='navbar-logo' /></NavbarBrand>
-                    <NavbarToggler onClick={this.toggle} className='navbar-toggler'/>
+                    <NavbarToggler onClick={this.toggle} className='navbar-toggler' />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem className='navbar-item'>

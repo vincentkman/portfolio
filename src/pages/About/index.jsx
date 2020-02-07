@@ -7,7 +7,7 @@ function About() {
     return (
         <div id='about' className='about'>
             <div className='about-landing-page landing-page'>
-                <LandingPage title='ABOUT' route='/portfolio' btn_name='SEE MY PORTFOLIO'/>
+                <LandingPage title='ABOUT' route='/portfolio' btn_name='SEE MY PORTFOLIO' />
             </div>
             <div className='about-container'>
                 <h1 className='title'>About me</h1>
@@ -16,7 +16,6 @@ function About() {
                         </p>
                 </Jumbotron>
             </div>
-
         </div>
     );
 }

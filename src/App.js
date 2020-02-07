@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <ProjectProvider>
         <Router>
-          <div>
+          <>
             <Header />
             <Switch>
               <Route exact path='/' component={Home} />
@@ -31,7 +31,7 @@ function App() {
               <Route component={NotFound} />
             </Switch>
             <Footer />
-          </div>
+          </>
         </Router>
       </ProjectProvider>
     </div>

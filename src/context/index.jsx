@@ -5,8 +5,8 @@ let ProjectContext = React.createContext();
 let ProjectConsumer = ProjectContext.Consumer;
 
 class ProjectProvider extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             projectItems: []
         }

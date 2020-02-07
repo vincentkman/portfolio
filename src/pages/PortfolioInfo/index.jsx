@@ -12,7 +12,7 @@ function PortfolioInfo() {
     if (!project) {
         return <Loading />;
     }
-    const { img, title, description, github_link, live_link, skill1, skill2, skill3, skill4, skill5 } = project;
+    const { img, title, github_link, live_link, skill1, skill2, skill3, skill4, skill5 } = project;
     return (
         <div className='portfolio-info'>
             <div className='portfolio-info-landing-page landing-page'>
@@ -54,4 +54,4 @@ function PortfolioInfo() {
     );
 }
 
-export default PortfolioInfo
+export default PortfolioInfo;

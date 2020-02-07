@@ -23,7 +23,7 @@ function AllProjects() {
                 );
             }}
         </ProjectConsumer>
-    )
+    );
 }
 
 export default AllProjects
