@@ -4,7 +4,7 @@ import './project.scss';
 
 function Project({ id, img, title }) {
     return (
-        <>
+        <div>
             <div className='all-projects-container'>
                 <div className='all-projects-item'>
                     <img src={img} alt="project" className='all-projects-item-img img' />
@@ -20,7 +20,7 @@ function Project({ id, img, title }) {
             <div className='all-projects-item-detail detail'>
                 <p>{title}</p>
             </div>
-        </>
+        </div>
     );
 }
 
