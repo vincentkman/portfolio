@@ -12,7 +12,7 @@ function Project({ id, img, title }) {
                         <Link
                             to={`/portfolio/${id}`}
                         >
-                            <i className="fas fa-search all-projects-item-overlay-icon icon"></i>
+                            <i className="fas fa-search all-projects-item-overlay-icon icon" />
                         </Link>
                     </div>
                 </div>
